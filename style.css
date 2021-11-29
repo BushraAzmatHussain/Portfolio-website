@@ -106,6 +106,20 @@
     font-size: 16px;
     color: #fff;
 }
+.explore-btn{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight:700;
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(248, 55, 94);
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+
+}
 
 /* Responsive Media Query */
 @media (max-width:1104px){
@@ -199,34 +213,39 @@
 
 /* secound section */
 .container2{
-    width: 80%;
+    width: 100%;
+    
     margin: auto;
 }
 .gap{
     margin: 76px 0px;
 }
-.players{
+.pages{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 26px;
+    /* /* background-size: cover;
+    background-position: center; */
+    /* align-items: center; */
 
 
 }
-.player{
+.page{
     margin: auto;
     padding: 15px;
     box-shadow: 1px 1px 20px 13px #f59e9e4d;
     font-family: 'Ubuntu', 'sens-serif';
+    
 
 }
-.player p{
+.page p{
     font-weight: 20px;
     color: rgb(119 108 108);
     padding-top: 5px;
     font-family: 'Poppins', 'sens-serif';
 }
-.player h2{
+.page h2{
     padding-top: 5px;
     font-family: 'Poppins', 'sens-serif';
 }
@@ -241,10 +260,14 @@
     .players {
         grid-template-columns: repeat(1, 1fr);
     }
+    .pages{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 }
 .headline{
     text-align: center;
-    padding: 10px 20px;
+    padding: 50px 100px;
     margin-bottom: 20px;
     font-family: 'Ubuntu', 'sens-serif';
 }
@@ -340,6 +363,47 @@ button[type="submit"]:hover{
         pointer-events: none;
     }
 }
-.text-size{
-    text-
+/* project description */
+.description-section{
+    background-color: rgb(49, 6, 6);
+}
+.heading{
+    
+    padding: 25px 55px;
+    /* margin-bottom: 20px; */
+    font-family: 'Bubblegum Sans', 'sens-serif';
+    color: white;
+}
+.description{
+    padding: 20px 20px ;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'Bubblegum Sans', 'sens-serif';
+    color: white;
+    
+}
+.live-site{
+    padding: 20px 20px ;
+    margin-left: 35px;
+    font-family: 'Bubblegum Sans', 'sens-serif';
+
+}
+.live-site-btn{
+    color: darkred;
+    background-color: coral;
+    /* display: block; */
+    text-decoration: none;
+    text-align: center;
+    font-weight:700;
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    
+}
+.heading-des{
+    color: white;
+    padding-top: 5px;
+    font-family: 'Ubuntu', 'sens-serif';
 }
