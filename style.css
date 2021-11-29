@@ -64,7 +64,9 @@
 /* Home section */
 .home{
     display: flex;
-    background: url("images/banner4.jpg") no-repeat center;
+    background: url("images/banner44.png") no-repeat center;
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     min-height: 500px;
     font-family: 'Ubuntu', 'sens-serif';
