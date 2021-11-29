@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Navbar Style */
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    background-color: black;
+    font-family: 'Bubblegum Sans', 'sens-serif';
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background-color: black;
+
+}
+.navbar.sticky .logo a span{
+    color: coral;
+    transition: all 0.3s ease;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+.navbar .logo a span{
+    color: coral;
+
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: coral;
+}
+/* Menu button style */
+
+
+/* Home section */
+.home{
+    display: flex;
+    background: url("images/banner4.jpg") no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    font-family: 'Ubuntu', 'sens-serif';
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+    color: whitesmoke;
+}
+.home .home-content .text-2{
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: -3px;
+    color: whitesmoke;
+}
+.home .home-content .text-3{
+    font-size: 27px;
+    margin: 5px 0;
+    color: whitesmoke;
+}
+.home .home-content .text-3 span{
+    color: coral;
+    font-weight: 500;
+}
+.home-content a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight:700;
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: coral;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Responsive Media Query */
+@media (max-width:1104px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+
+}
+@media (max-width:991px){
+
+    .max-width{
+        padding: 0 50px;
+    }
+    
+}
+
+@media (max-width:947px){
+    .menu-btn{
+        color: white;
+        font-size: 23px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu.active{
+        left: 0;
+
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu li{
+        display: block;
+        
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 30px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+        
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+        
+    }
+    
+}
+@media (max-width:690px){
+
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+        
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+        
+    }
+}
+@media (max-width:500px){
+
+    .home .home-content .text-2{
+        font-size: 50px;
+        
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+        
+    }
+}
+
+/* secound section */
+.container2{
+    width: 80%;
+    margin: auto;
+}
+.gap{
+    margin: 76px 0px;
+}
+.players{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 26px;
+
+
+}
+.player{
+    margin: auto;
+    padding: 15px;
+    box-shadow: 1px 1px 20px 13px #f59e9e4d;
+    font-family: 'Ubuntu', 'sens-serif';
+
+}
+.player p{
+    font-weight: 20px;
+    color: rgb(119 108 108);
+    padding-top: 5px;
+    font-family: 'Poppins', 'sens-serif';
+}
+.player h2{
+    padding-top: 5px;
+    font-family: 'Poppins', 'sens-serif';
+}
+
+/* second section end */
+
+@media only screen and (max-width:688px){
+    .container2 {
+        width: 90%;
+        margin: auto;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.headline{
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', 'sens-serif';
+}
+.contact{
+    height: 100vh;
+    width: 100%;
+    /* background-color:rgb(250, 177, 151); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', 'sens-serif';
+    flex-direction: column;
+}
+.container{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px coral;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid rgb(224, 224, 210) ;
+    margin-top: 5px;
+
+}
+textarea{
+    resize: vertical;
+}
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: 'Ubuntu', 'sens-serif';
+    color:coral ;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+
+}
+button[type="submit"]:hover{
+    background-color:rgb(243, 207, 177);
+}
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+
+}
+#status.success{
+    background-color: rgb(152, 253, 152);
+    animation: status 4s ease delay forwards;
+
+}
+#status.error{
+    background-color: rgb(255, 57, 57);
+    color: white;
+    animation: status 4s ease forwards;
+
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+.text-size{
+    text-
+}

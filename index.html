@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home section start -->
+
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Bushra Azmat Hussain</div>
+                <div class="text-3">And I'm a <span>Web Developer </span></div>
+                <a href="https://drive.google.com/file/d/1N0Hj1ptknVsEMJjET25FbEgJuQ--ZnDJ/view?usp=sharing"
+                    target="_blank">Resume</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class=" gap" id="projects">
+        <h1 class="headline">My Projects</h1>
+        <div class="container2">
+
+            <div class="players">
+                <div class="player">
+                    <img src="images/players/player-1.png" alt="">
+                    <h2>ENT Care Clinic</h2>
+                    <p>This is an ENT care-related clinic’s website where users can find out the clinic’s
+                        information.Users have
+                        to log in for visiting certain pages because this website has a private route.</p>
+                    <br>
+
+                    <a href="https://ent-care-clinic.web.app/" target="_blank">Live Website</a>
+                </div>
+
+                <div class="player">
+                    <img src="images/players/player-2.png" alt="">
+                    <h2>Travel With Us</h2>
+                    <p>This is a travel website which is helpful for clients for traveling to different
+                        countries.Clients can book for visiting
+                        different countries and will be able to see others booking as
+                        well.</p>
+                    <br>
+                    <a href="https://tourism-website-dce14.web.app/" target="_blank">Live Website</a>
+                </div>
+
+                <div class="player">
+                    <img src="images/players/player-3.png" alt="">
+                    <h2>Car World</h2>
+                    <p>
+                        This is a website where users can log in using Google or register with email then sign in.
+                        Firebase Authentication has been used for authentication.There are separate dashboards for
+                        client and admin.
+                    </p>
+                    <br>
+
+                    <a href="https://car-world-by-bushra.netlify.app/" target="_blank">Live Website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="headline">Contact</h1>
+        <div class="container">
+            <form action="https://formspree.io/f/xoqranvk" method="POST" id="my-form">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input class="text-size" type="text" id="firstName" name="firstName">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="fs-4 " type="email" id="email" name="email">
+                </div>
+                <!-- <div class="mb-3 form-group">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div> -->
+                <div class="form-group">
+                    <label for="massage">Massage</label>
+                    <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+        <div id="status"></div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
