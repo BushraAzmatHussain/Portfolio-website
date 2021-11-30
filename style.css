@@ -64,7 +64,7 @@
 /* Home section */
 .home{
     display: flex;
-    background: url("images/banner44.png") no-repeat center;
+    background: url("images/banner4.jpg") no-repeat center;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -405,5 +405,173 @@ button[type="submit"]:hover{
 .heading-des{
     color: white;
     padding-top: 5px;
-    font-family: 'Ubuntu', 'sens-serif';
+    font-family: 'Bubblegum Sans', 'sens-serif';
+}
+
+/* about section styling */
+.title{
+    text-align: center;
+    padding: 50px;
+    margin: 20px;
+}
+
+.about .title::after{
+    
+    content: " who I am";
+    font-family:  'Ubuntu', 'sens-serif';
+    color: crimson;
+}
+.about .about-content .left{
+    font-family:  'Ubuntu', 'sens-serif';
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    font-family:  'Ubuntu', 'sens-serif';
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family:  'Ubuntu', 'sens-serif';
+}
+
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+
+.max-width{
+    max-width: 930px;
+}
+.about .about-content .column{
+    width: 100%;
+}
+.about .about-content .left{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+}
+.about .about-content .right{
+    flex: 100%;
+}
+
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about .about-content .right .text,
+    .skills .skills-content .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .right form .error-box{
+       width: 150px;
+    }}
+
+
+    /* */
+    
+/* footer */
+
+
+footer.footerSection {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.footerContent img {
+    width: 250px;
+}
+
+.socialIcons a {
+    background: #c5cccc;
+    font-size: 21px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #9c9c9c;
+    margin-bottom: 30px;
+}
+
+.footerContent p {
+    font-size: 18px;
+    margin-bottom: 70px;
+    
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+
+footer.footerSection {
+    margin-top: 50px;
+}
+.footerContent img {
+    width: 300px;
+}
+.socialIcons {
+    padding: 25px 0px 0px;
+}
+.footerContent p {
+    margin-bottom: 90px;
+}
+
+/* footer end */
+
+/* blogs */
+.blogs{
+    background-color: rgb(252, 170, 141);
+}
+.comming-text{
+    text-align: center;
+    padding: 100px;
+    font-family:  'Ubuntu', 'sens-serif';
 }
