@@ -11,9 +11,14 @@
     </script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </head>
 
-<body>
+<body class="bg-full">
     <!-- Navbar -->
 
     <nav class="navbar">
@@ -48,29 +53,92 @@
     </section>
 
     <!-- about section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="images/IMG_7672New.heic" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Bushra and I'm a <span class="typing-2"></span></div>
-                    <p>I am a passionate, enthusiastic, and hardworking person. I want to grow as a MERN stack
-                        Developer. I learn from my mistakes and apply them for betterment.<br>
-                        I am running a student at Metropolitan University, Sylhet. I live in Sylhet city of Bangladesh.
-                        I just find myself happy with coding. I am able to handle multiple tasks on a daily basis. I use
-                        a creative approach to problem-solving. I am a dependable person who is great at time
-                        management. I am always energetic and eager to learn new skills.
-                    </p>
+    <section class="container">
+        <div class=" about" id="about">
+            <div class="max-width">
+                <h2 class="title">About me</h2>
+                <div class="about-content">
+                    <div class="column left">
+                        <img src="images/IMG_7672New.heic" alt="">
+                    </div>
+                    <div class="column right">
+                        <div class="text">I'm Bushra and I'm a <span class="typing-2"></span></div>
+                        <p>I am a passionate, enthusiastic, and hardworking person. I want to grow as a MERN stack
+                            Developer. I learn from my mistakes and apply them for betterment.<br>
+                            I am a running student at Metropolitan University, Sylhet. I live in Sylhet city of
+                            Bangladesh.
+                            I just find myself happy with coding. I am able to handle multiple tasks on a daily basis. I
+                            use
+                            a creative approach to problem-solving. I am a dependable person who is great at time
+                            management. I am always energetic and eager to learn new skills.
+                        </p>
 
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class=" gap" id="projects">
+    <section class="container">
+        <h1 class="headline">My Projects</h1>
+
+        <div class="d-flex justify-content-around">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/ENT.PNG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ENT Care Clinic</h5>
+                            <p class="card-text">This is an ENT care-related clinic’s website where users can find out
+                                the
+                                clinic’s
+                                information.Users have
+                                to log in for visiting certain pages because this website has a private route.</p>
+                            <br>
+
+                            <a class="explore-btn" href="projects/project1.html" target="_blank">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/travel.PNG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Travel With Us</h5>
+                            <p class="card-text">This is a travel website which is helpful for clients for traveling to
+                                different
+                                countries.Clients can book for visiting
+                                different countries and will be able to see others booking as
+                                well.</p>
+
+                            <br>
+
+                            <a class="explore-btn" href="projects/project2.html" target="_blank">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/car.PNG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Car World</h5>
+                            <p class="card-text">This is a website where users can log in using Google or register with
+                                email
+                                then sign in.
+                                Firebase Authentication has been used.There are separate dashboards for
+                                client and admin.</p>
+                            <br>
+
+                            <a class="explore-btn" href="projects/project2.html" target="_blank">Explore</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class=" gap" id="projects">
         <h1 class="headline">My Projects</h1>
         <div class="container2">
 
@@ -112,14 +180,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 
 
-    <section class="contact" id="contact">
+    <section class="container">
         <h1 class="headline">Contact</h1>
-        <div class="container">
+        <div class=" contact" id="contact">
             <form action="https://formspree.io/f/xoqranvk" method="POST" id="my-form">
                 <div class="form-group">
                     <label for="firstName">First Name</label>
