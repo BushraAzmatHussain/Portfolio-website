@@ -231,7 +231,9 @@
 
 
 }
+
 .page{
+    align-items: center;
     margin: auto;
     padding: 15px;
     box-shadow: 1px 1px 20px 13px #f59e9e4d;
@@ -240,6 +242,7 @@
 
 }
 .page p{
+    width: 400px;
     font-weight: 20px;
     color: rgb(119 108 108);
     padding-top: 5px;
@@ -375,7 +378,7 @@ button[type="submit"]:hover{
     color: white;
 }
 .description{
-    padding: 20px 20px ;
+    padding: 10px 10px ;
     margin-left: 50px;
     font-size: 20px;
     font-family: 'Bubblegum Sans', 'sens-serif';
